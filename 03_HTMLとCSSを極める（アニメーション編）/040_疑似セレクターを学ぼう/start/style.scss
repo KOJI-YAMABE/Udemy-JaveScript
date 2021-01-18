@@ -1,0 +1,17 @@
+a {
+  color: orange;
+
+  &:visited {
+    color: blue;
+  }
+}
+
+div {
+  & span {
+    color: olive;
+
+    &:nth-child(2n+1) {
+      color: red;
+    }
+  }
+}

@@ -10,12 +10,14 @@ $cBlack: black;
     background-color: $cBlack;
     border-radius: 50%;
     animation: sk-bouncedelay 1.4s infinite;
+  }
 
-    @for $i from 1 through 2 {
-      &:nth-child(#{$i}) {
-        animation-delay: -0.32s / $i;
-      }
-    }
+  & .bounce1 {
+    animation-delay: -0.32s;
+  }
+
+  & .bounce2 {
+    animation-delay: -0.16s;
   }
 }
 
@@ -23,12 +25,15 @@ $cBlack: black;
   0% {
     transform: scale(0);
   }
+
   40% {
     transform: scale(1);
   }
+
   80% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(0);
   }

@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+a {
+  color: orange;
+}
+
+a:visited {
+  color: blue;
+}
+
+div span {
+  color: olive;
+}
+
+div span:nth-child(2n+1) {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
