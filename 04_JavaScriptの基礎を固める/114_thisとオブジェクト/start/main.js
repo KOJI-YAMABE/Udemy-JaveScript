@@ -4,7 +4,7 @@ const obj = {
     printFullName: function() {
         console.log(this.first_name);
         const fn = function() {
-            console.log(this);
+            console.log(this.fiest_name);
         };
         window.setTimeout(fn);  
     }
@@ -19,7 +19,6 @@ class MyObj {
     printFullName() {
         console.log(this.first_name);
         const fn = function() {
-            console.log(this);
         };
         window.setTimeout(fn)   
     }
@@ -28,5 +27,5 @@ class MyObj {
 const obj2 = new MyObj();
 
 
-obj.printFullName();
-obj2.printFullName();
+ obj.printFullName();
+// obj2.printFullName();
