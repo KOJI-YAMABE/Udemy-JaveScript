@@ -1,7 +1,7 @@
 @import "mixin";
 
 html {
-    font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
 }
 
 body {
@@ -30,6 +30,10 @@ body {
     & .char {
       display: inline-block;
     }
+  }
+
+  & .char {
+    opacity: 0;
   }
 }
 
