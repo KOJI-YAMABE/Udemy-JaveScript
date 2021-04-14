@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-
+    
     const els = document.querySelectorAll('.animate-title');
-const cb = function(entries, observer) {
-    entries.forEach(entry => {
-        if(entry.isIntersecting) {
-            const ta = new TextAnimation(entry.target);
-            ta.animate();
-            observer.unobserve(entry.target);
-        } else {
-        }
-    });
+    const cb = function(entries, observer) {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                const ta = new TextAnimation(entry.target);
+                ta.animate();
+                observer.unobserve(entry.target);
+            } else {
+            }
+        });
     // alert('intersecting');
 }
 const options = {

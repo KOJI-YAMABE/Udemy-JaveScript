@@ -7,7 +7,6 @@ class TextAnimation {
     //   } else {
     //       this.DOM.el = document.querySelector(el);
     //   }
-      this.DOM.el = document.querySelector(el);
       this.chars = this.DOM.el.innerHTML.trim().split("");
       this.DOM.el.innerHTML = this._splitText();
   }
