@@ -33,6 +33,7 @@ class ScrollObserver {
         
         this.els.forEach(el => this.io.observe(el));
     }
+    
 
     destroy() {
         this.io.disconnect();
