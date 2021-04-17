@@ -1,0 +1,10 @@
+h1 {
+  color: red;
+}
+
+@media screen and (max-width: 601px) {
+  h1 {
+    color: blue;
+  }
+}
+/*# sourceMappingURL=style.css.map */
