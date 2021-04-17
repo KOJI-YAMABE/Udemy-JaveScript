@@ -1,9 +1,0 @@
-@import 'mobile.scss';
-
-@media screen and (max-width: 601px) {
-  @import 'desktop.scss';
-}
-
-
-// 基本的にモバイルファーストのコードを書く。
-// 理由はディスクの方がコードが複雑なのでモバイルのcssでコードを打ち消す量が増えるため
