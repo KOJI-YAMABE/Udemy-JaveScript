@@ -836,7 +836,7 @@ img {
 }
 
 .travel__title::before {
-  display: block;
+  display: none;
   content: "";
   position: absolute;
   top: 50%;
@@ -844,6 +844,17 @@ img {
   width: 100px;
   height: 1px;
   background-color: black;
+  -webkit-transform: translateY(-50%) scaleX(0);
+          transform: translateY(-50%) scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease 1.6s;
+  transition: -webkit-transform 0.3s ease 1.6s;
+  transition: transform 0.3s ease 1.6s;
+  transition: transform 0.3s ease 1.6s, -webkit-transform 0.3s ease 1.6s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.travel__title.inview::before {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -1013,6 +1024,9 @@ Stylesheet: 960px以上のモニタで適用
   }
   .travel__description {
     margin-bottom: 40px;
+  }
+  .travel__title {
+    display: block;
   }
 }
 

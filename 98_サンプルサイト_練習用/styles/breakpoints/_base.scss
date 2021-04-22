@@ -84,7 +84,7 @@ img {
     }
     &.inview {
       &::before {
-        transform: translate(-50%);
+        transform: translateY(-50%);
       }
     }
   }
